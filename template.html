@@ -12,6 +12,8 @@
 (function(){var h=location.hostname;if(!(h==='localhost'||h==='127.0.0.1'||h==='::1'||/^192\.168\./.test(h)||/^10\./.test(h)))return;
  var s=document.createElement('script');s.src='https://greencrosscanna.github.io/greencross-gx-theme/gx-dev.js';s.async=false;document.head.appendChild(s)})();
 </script>
+<!-- gx-handoff.js FIRST: it takes a portal sign-in code (#gxcode=) out of the address bar before anything reads it. -->
+<script src="https://greencrosscanna.github.io/greencross-gx-theme/gx-handoff.js"></script>
 <script src="https://greencrosscanna.github.io/greencross-gx-theme/gx-client.js"></script>
 <script>
   // Dev guard reads. The only write is submit_display_order (an email to Sky): blocked locally until armed.
@@ -92,7 +94,7 @@ body.gated .top,body.gated main{display:none}
 <script>
 const DATA=__DATA__;
 const IMG=__IMG__;
-const APP_VERSION='v1.001'; /* deploy.sh reads this; bump on each ship (vMAJOR.BBB) */
+const APP_VERSION='v1.002'; /* deploy.sh reads this; bump on each ship (vMAJOR.BBB) */
 /* GX Core: sign-in, the live store list, and the one write — submit_display_order, which emails Sky.
    The server decides everything that matters: who is ordering (from the session), whether they may
    (a manager on any app), which store, which items. This page only collects and shows. */
@@ -280,6 +282,7 @@ function done(pl,sent,r){if(sent){cart=[];save();count()}
  $('#ok').onclick=()=>{$('#cov').classList.remove('on');render()};
  const cp=$('#cp');if(cp)cp.onclick=()=>{try{navigator.clipboard.writeText(pl.text).then(()=>toast('Copied'),()=>toast('Select the text and copy'))}catch(e){toast('Select the text and copy')}}}
 /* ── sign-in (suite gx-login look; password only — Google sign-in is the portal's, for admins) ── */
+function sessionFromLogin(r){return{user:r.user,name:r.displayName||r.user,role:r.role,token:r.token,expiresAt:r.expiresAt}}
 function signOut(msg){clearSession();renderGate(msg||'')}
 function renderGate(errMsg){document.body.classList.add('gated');$('#cov').classList.remove('on');$('#drawer').classList.remove('on');
  $('#gate').innerHTML='<div class="gx-login"><div class="gx-login-card"><div class="gx-login-head"><img class="gx-login-mark" src="https://greencrosscanna.github.io/greencross-gx-theme/gx-logo.png" alt="Green Cross"><div class="gx-login-sub">Display Shop</div></div>'+
@@ -292,7 +295,7 @@ function renderGate(errMsg){document.body.classList.add('gated');$('#cov').class
   GX.getJSON('login',{user:$('#gateUser').value.trim(),pass:$('#gatePass').value,app:'displayshop'},{retries:2,timeoutMs:20000}).then(r=>{
    if(r&&r.code==='no_access')throw new Error('Your account is not set up for Green Cross apps yet. Ask Sky to add you.');
    if(!r||!r.ok)throw new Error((r&&r.error)||'Sign-in failed');
-   setSession({user:r.user,name:r.displayName||r.user,role:r.role,token:r.token,expiresAt:r.expiresAt});start()
+   setSession(sessionFromLogin(r));start()
   }).catch(e=>{err.textContent=(e&&e.message)||'Sign-in failed';btn.disabled=false;btn.textContent='Sign in';$('#gatePass').value=''})});
  $('#gateUser').focus()}
 function loadStores(){GX.jsonp('stores',{}).then(r=>{const list=((r&&r.stores)||[]).filter(s=>s.store_id&&s.display_name&&!s.is_closed)
@@ -303,6 +306,9 @@ function start(){const s=getSession();if(!s){renderGate('');return}
  count();render()}
 $('#q').oninput=e=>{query=e.target.value;render()};
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){$('#pov').classList.remove('on');$('#drawer').classList.remove('on')}});
+/* Portal tile: a one-time #gxcode= is traded for this app's normal session, then the page reloads signed in.
+   No code (the usual case) does nothing; the password form stays as it is. */
+if(window.GXHandoff&&GXHandoff.code)GXHandoff.run({app:'displayshop',save:r=>setSession(sessionFromLogin(r)),current:()=>{const s=getSession();return s?s.user:null}});
 loadStores();start();
 try{document.fonts.load('900 100px GothamBlack').then(()=>{Object.keys(plateCache).forEach(k=>delete plateCache[k]);render()}).catch(()=>{})}catch(e){}
 </script></body></html>
