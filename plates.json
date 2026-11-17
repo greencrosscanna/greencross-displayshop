@@ -1,0 +1,303 @@
+[
+ {
+  "id": "Bbrand",
+  "name": "Bbrand",
+  "w": 88.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "BensonArbor",
+  "name": "Benson Arbor",
+  "w": 159.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "BobsBammer",
+  "name": "Bobs Bammer",
+  "w": 152.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "Bobsled",
+  "name": "Bobsled",
+  "w": 97.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "Buddies",
+  "name": "Buddies",
+  "w": 91.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "Chompd",
+  "name": "Chompd",
+  "w": 91.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "DavesNuttz",
+  "name": "Daves Nuttz",
+  "w": 143.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "Decibel",
+  "name": "Decibel",
+  "w": 89.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "Doobies",
+  "name": "Doobies",
+  "w": 94.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "Drops",
+  "name": "Drops",
+  "w": 74.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "EastFork",
+  "name": "East Fork",
+  "w": 115.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "Entourage",
+  "name": "Entourage",
+  "w": 125.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "FarmersFriend",
+  "name": "Farmers Friend",
+  "w": 175.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "Forte",
+  "name": "Forte",
+  "w": 72.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "Freshy",
+  "name": "Freshy",
+  "w": 84.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "GoodTide",
+  "name": "Good Tide",
+  "w": 113.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "GreenCross",
+  "name": "Green Cross",
+  "w": 140.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "Gron",
+  "name": "Gron",
+  "w": 64.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "HapyKitchen",
+  "name": "Hapy Kitchen",
+  "w": 147.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "Hellavated",
+  "name": "Hellavated",
+  "w": 129.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "HighDesertPure",
+  "name": "High Desert Pure",
+  "w": 187.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "Iconic",
+  "name": "Iconic",
+  "w": 75.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "Kaprikorn",
+  "name": "Kaprikorn",
+  "w": 120.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "KillaBeez",
+  "name": "Killa Beez",
+  "w": 117.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "Kites",
+  "name": "Kites",
+  "w": 64.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "Lunar",
+  "name": "Lunar",
+  "w": 75.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "MagicNumber",
+  "name": "Magic Number",
+  "w": 154.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "Meraki",
+  "name": "Meraki",
+  "w": 81.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "MrMoxey",
+  "name": "Mr Moxey",
+  "w": 130.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "Mule",
+  "name": "Mule",
+  "w": 61.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "NWKind",
+  "name": "NW Kind",
+  "w": 94.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "National",
+  "name": "National",
+  "w": 106.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "OregonRoots",
+  "name": "Oregon Roots",
+  "w": 159.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "PorlandHeights",
+  "name": "Portland Heights",
+  "w": 197.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "Sessions",
+  "name": "Sessions",
+  "w": 101.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "Smokiez",
+  "name": "Smokiez",
+  "w": 94.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "TakeItEasy",
+  "name": "Take It Easy",
+  "w": 135.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "TokingFarms",
+  "name": "Toking Farms",
+  "w": 149.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "Verdant",
+  "name": "Verdant",
+  "w": 100.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "Vibes",
+  "name": "Vibes",
+  "w": 65.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "WVA",
+  "name": "WVA",
+  "w": 56.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "Wyld",
+  "name": "Wyld",
+  "w": 67.0,
+  "h": 21.0,
+  "d": 18.0
+ },
+ {
+  "id": "Yamba",
+  "name": "Yamba",
+  "w": 77.0,
+  "h": 21.0,
+  "d": 18.0
+ }
+]

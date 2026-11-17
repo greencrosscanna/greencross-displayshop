@@ -1,0 +1,1394 @@
+{
+ "categories": [
+  {
+   "id": "stands",
+   "name": "Stands"
+  },
+  {
+   "id": "bottles",
+   "name": "Bottles & jars"
+  },
+  {
+   "id": "trays",
+   "name": "Trays & holders"
+  },
+  {
+   "id": "lighter",
+   "name": "Lighters"
+  },
+  {
+   "id": "battery",
+   "name": "Battery holders"
+  },
+  {
+   "id": "plates",
+   "name": "Brand name plates"
+  },
+  {
+   "id": "soon",
+   "name": "Coming soon"
+  }
+ ],
+ "products": [
+  {
+   "id": "SIMPLE",
+   "cat": "stands",
+   "name": "Simple Stand",
+   "tag": "Boxed and blister packs",
+   "blurb": "A flat-base stand for boxed and blister packs. Vape cartridge boxes and boxed pre-rolls lean back on the angled face. Pick the angle for the shelf it goes on.",
+   "axes": {
+    "sizes": [
+     {
+      "id": "M",
+      "label": "Medium"
+     }
+    ],
+    "angles": [
+     {
+      "id": "30",
+      "label": "30\u00b0",
+      "note": "Lower shelves"
+     },
+     {
+      "id": "45",
+      "label": "45\u00b0",
+      "note": "Mid shelves"
+     },
+     {
+      "id": "75",
+      "label": "75\u00b0",
+      "note": "Top shelves"
+     }
+    ]
+   },
+   "fits": [
+    "Sessions vape, blister, 5.5 in",
+    "Mule vape, box, 5.5 in",
+    "East Fork pre-roll, box, 4.75 in",
+    "Hellavated pre-roll, box, 4.5 in"
+   ],
+   "fitnote": "Medium suits packs 4.5 to 5.5 in long. The stand back sits 1 in below the shortest pack so it hides behind the product.",
+   "variants": [
+    {
+     "id": "M-30",
+     "label": "Medium, 30\u00b0 (lower shelves)",
+     "img": "simple-30",
+     "dim": "simple-30-dim",
+     "specs": {
+      "Face angle": "30\u00b0 to the table",
+      "Best shelf": "Lower shelves",
+      "Stand back height": "89 mm",
+      "Stand width": "37.5 mm",
+      "Width": "37.5 mm",
+      "Depth, front to back": "87.7 mm",
+      "Height": "48.4 mm"
+     }
+    },
+    {
+     "id": "M-45",
+     "label": "Medium, 45\u00b0 (mid shelves)",
+     "img": "simple-45",
+     "dim": "simple-45-dim",
+     "specs": {
+      "Face angle": "45\u00b0 to the table",
+      "Best shelf": "Mid shelves",
+      "Stand back height": "89 mm",
+      "Stand width": "37.5 mm",
+      "Width": "37.5 mm",
+      "Depth, front to back": "77 mm",
+      "Height": "66.7 mm"
+     }
+    },
+    {
+     "id": "M-75",
+     "label": "Medium, 75\u00b0 (top shelves)",
+     "img": "simple-75",
+     "dim": "simple-75-dim",
+     "specs": {
+      "Face angle": "75\u00b0 to the table",
+      "Best shelf": "Top shelves",
+      "Stand back height": "89 mm",
+      "Stand width": "37.5 mm",
+      "Width": "37.5 mm",
+      "Depth, front to back": "42.2 mm",
+      "Height": "88.8 mm"
+     }
+    }
+   ],
+   "notes": [
+    "30\u00b0 is for lower shelves, 45\u00b0 for mid shelves, 75\u00b0 for top shelves."
+   ]
+  },
+  {
+   "id": "BAG",
+   "cat": "stands",
+   "name": "Edge Stand",
+   "tag": "Mylar bags",
+   "blurb": "A stand with a small front lip that catches the bottom seam of a mylar bag, so off-balance bags do not slide. Any product in a mylar bag goes here, vapes and pre-rolls alike.",
+   "axes": {
+    "sizes": [
+     {
+      "id": "M",
+      "label": "Medium"
+     }
+    ],
+    "angles": [
+     {
+      "id": "30",
+      "label": "30\u00b0",
+      "note": "Lower shelves"
+     },
+     {
+      "id": "45",
+      "label": "45\u00b0",
+      "note": "Mid shelves"
+     },
+     {
+      "id": "75",
+      "label": "75\u00b0",
+      "note": "Top shelves"
+     }
+    ]
+   },
+   "fits": [
+    "Verdant vape, mylar, 5 in",
+    "Oregon Roots vape, mylar, 5.25 in"
+   ],
+   "fitnote": "Medium suits bags 5 to 5.25 in long. The stand back sits 1 in below the shortest bag.",
+   "variants": [
+    {
+     "id": "M-30",
+     "label": "Medium, 30\u00b0 (lower shelves)",
+     "img": "bag-30",
+     "dim": "bag-30-dim",
+     "specs": {
+      "Face angle": "30\u00b0 to the table",
+      "Best shelf": "Lower shelves",
+      "Stand back height": "102 mm",
+      "Stand width": "37.5 mm",
+      "Front lip": "8 mm tall",
+      "Width": "37.5 mm",
+      "Depth, front to back": "101.7 mm",
+      "Height": "54.9 mm"
+     }
+    },
+    {
+     "id": "M-45",
+     "label": "Medium, 45\u00b0 (mid shelves)",
+     "img": "bag-45",
+     "dim": "bag-45-dim",
+     "specs": {
+      "Face angle": "45\u00b0 to the table",
+      "Best shelf": "Mid shelves",
+      "Stand back height": "102 mm",
+      "Stand width": "37.5 mm",
+      "Front lip": "8 mm tall",
+      "Width": "37.5 mm",
+      "Depth, front to back": "90 mm",
+      "Height": "75.9 mm"
+     }
+    },
+    {
+     "id": "M-75",
+     "label": "Medium, 75\u00b0 (top shelves)",
+     "img": "bag-75",
+     "dim": "bag-75-dim",
+     "specs": {
+      "Face angle": "75\u00b0 to the table",
+      "Best shelf": "Top shelves",
+      "Stand back height": "102 mm",
+      "Stand width": "37.5 mm",
+      "Front lip": "8 mm tall",
+      "Width": "37.5 mm",
+      "Depth, front to back": "49.5 mm",
+      "Height": "101.3 mm"
+     }
+    }
+   ],
+   "notes": [
+    "30\u00b0 is for lower shelves, 45\u00b0 for mid shelves, 75\u00b0 for top shelves."
+   ]
+  },
+  {
+   "id": "PREROLL",
+   "hero": "preroll-3-30",
+   "cat": "stands",
+   "name": "Pre-Roll Tube Holder",
+   "tag": "Tubes lie in angled channels",
+   "blurb": "An angled holder with one half-round channel per pre-roll tube and a front lip so the tubes do not slide off. Pick how many tubes wide (1 to 10) and the shelf angle.",
+   "axes": {
+    "sizes": [
+     {
+      "id": "1",
+      "label": "1 wide"
+     },
+     {
+      "id": "2",
+      "label": "2 wide"
+     },
+     {
+      "id": "3",
+      "label": "3 wide"
+     },
+     {
+      "id": "4",
+      "label": "4 wide"
+     },
+     {
+      "id": "5",
+      "label": "5 wide"
+     },
+     {
+      "id": "6",
+      "label": "6 wide"
+     },
+     {
+      "id": "7",
+      "label": "7 wide"
+     },
+     {
+      "id": "8",
+      "label": "8 wide"
+     },
+     {
+      "id": "9",
+      "label": "9 wide"
+     },
+     {
+      "id": "10",
+      "label": "10 wide"
+     }
+    ],
+    "angles": [
+     {
+      "id": "30",
+      "label": "30\u00b0",
+      "note": "Lower shelves"
+     },
+     {
+      "id": "45",
+      "label": "45\u00b0",
+      "note": "Mid shelves"
+     },
+     {
+      "id": "75",
+      "label": "75\u00b0",
+      "note": "Top shelves"
+     }
+    ]
+   },
+   "fitnote": "Each channel is sized for an 18 mm (0.71 in) tube up to 93 mm (3.7 in) long, on a 22 mm spacing.",
+   "variants": [
+    {
+     "id": "1-30",
+     "label": "1 wide, 30\u00b0 (lower shelves)",
+     "img": "preroll-1-30",
+     "dim": "preroll-1-30-dim",
+     "specs": {
+      "Face angle": "30\u00b0 to the table",
+      "Best shelf": "Lower shelves",
+      "Tubes wide": "1",
+      "Tube diameter": "18 mm",
+      "Width": "24 mm",
+      "Depth, front to back": "77.2 mm",
+      "Height": "46.9 mm"
+     },
+     "size": "1",
+     "angle": "30"
+    },
+    {
+     "id": "1-45",
+     "label": "1 wide, 45\u00b0 (mid shelves)",
+     "img": "preroll-1-45",
+     "dim": "preroll-1-45-dim",
+     "specs": {
+      "Face angle": "45\u00b0 to the table",
+      "Best shelf": "Mid shelves",
+      "Tubes wide": "1",
+      "Tube diameter": "18 mm",
+      "Width": "24 mm",
+      "Depth, front to back": "66.7 mm",
+      "Height": "62.8 mm"
+     },
+     "size": "1",
+     "angle": "45"
+    },
+    {
+     "id": "1-75",
+     "label": "1 wide, 75\u00b0 (top shelves)",
+     "img": "preroll-1-75",
+     "dim": "preroll-1-75-dim",
+     "specs": {
+      "Face angle": "75\u00b0 to the table",
+      "Best shelf": "Top shelves",
+      "Tubes wide": "1",
+      "Tube diameter": "18 mm",
+      "Width": "24 mm",
+      "Depth, front to back": "33.1 mm",
+      "Height": "81 mm"
+     },
+     "size": "1",
+     "angle": "75"
+    },
+    {
+     "id": "2-30",
+     "label": "2 wide, 30\u00b0 (lower shelves)",
+     "img": "preroll-2-30",
+     "dim": "preroll-2-30-dim",
+     "specs": {
+      "Face angle": "30\u00b0 to the table",
+      "Best shelf": "Lower shelves",
+      "Tubes wide": "2",
+      "Tube diameter": "18 mm",
+      "Width": "46 mm",
+      "Depth, front to back": "77.2 mm",
+      "Height": "46.9 mm"
+     },
+     "size": "2",
+     "angle": "30"
+    },
+    {
+     "id": "2-45",
+     "label": "2 wide, 45\u00b0 (mid shelves)",
+     "img": "preroll-2-45",
+     "dim": "preroll-2-45-dim",
+     "specs": {
+      "Face angle": "45\u00b0 to the table",
+      "Best shelf": "Mid shelves",
+      "Tubes wide": "2",
+      "Tube diameter": "18 mm",
+      "Width": "46 mm",
+      "Depth, front to back": "66.7 mm",
+      "Height": "62.8 mm"
+     },
+     "size": "2",
+     "angle": "45"
+    },
+    {
+     "id": "2-75",
+     "label": "2 wide, 75\u00b0 (top shelves)",
+     "img": "preroll-2-75",
+     "dim": "preroll-2-75-dim",
+     "specs": {
+      "Face angle": "75\u00b0 to the table",
+      "Best shelf": "Top shelves",
+      "Tubes wide": "2",
+      "Tube diameter": "18 mm",
+      "Width": "46 mm",
+      "Depth, front to back": "33.1 mm",
+      "Height": "81 mm"
+     },
+     "size": "2",
+     "angle": "75"
+    },
+    {
+     "id": "3-30",
+     "label": "3 wide, 30\u00b0 (lower shelves)",
+     "img": "preroll-3-30",
+     "dim": "preroll-3-30-dim",
+     "specs": {
+      "Face angle": "30\u00b0 to the table",
+      "Best shelf": "Lower shelves",
+      "Tubes wide": "3",
+      "Tube diameter": "18 mm",
+      "Width": "68 mm",
+      "Depth, front to back": "77.2 mm",
+      "Height": "46.9 mm"
+     },
+     "size": "3",
+     "angle": "30"
+    },
+    {
+     "id": "3-45",
+     "label": "3 wide, 45\u00b0 (mid shelves)",
+     "img": "preroll-3-45",
+     "dim": "preroll-3-45-dim",
+     "specs": {
+      "Face angle": "45\u00b0 to the table",
+      "Best shelf": "Mid shelves",
+      "Tubes wide": "3",
+      "Tube diameter": "18 mm",
+      "Width": "68 mm",
+      "Depth, front to back": "66.7 mm",
+      "Height": "62.8 mm"
+     },
+     "size": "3",
+     "angle": "45"
+    },
+    {
+     "id": "3-75",
+     "label": "3 wide, 75\u00b0 (top shelves)",
+     "img": "preroll-3-75",
+     "dim": "preroll-3-75-dim",
+     "specs": {
+      "Face angle": "75\u00b0 to the table",
+      "Best shelf": "Top shelves",
+      "Tubes wide": "3",
+      "Tube diameter": "18 mm",
+      "Width": "68 mm",
+      "Depth, front to back": "33.1 mm",
+      "Height": "81 mm"
+     },
+     "size": "3",
+     "angle": "75"
+    },
+    {
+     "id": "4-30",
+     "label": "4 wide, 30\u00b0 (lower shelves)",
+     "img": "preroll-4-30",
+     "dim": "preroll-4-30-dim",
+     "specs": {
+      "Face angle": "30\u00b0 to the table",
+      "Best shelf": "Lower shelves",
+      "Tubes wide": "4",
+      "Tube diameter": "18 mm",
+      "Width": "90 mm",
+      "Depth, front to back": "77.2 mm",
+      "Height": "46.9 mm"
+     },
+     "size": "4",
+     "angle": "30"
+    },
+    {
+     "id": "4-45",
+     "label": "4 wide, 45\u00b0 (mid shelves)",
+     "img": "preroll-4-45",
+     "dim": "preroll-4-45-dim",
+     "specs": {
+      "Face angle": "45\u00b0 to the table",
+      "Best shelf": "Mid shelves",
+      "Tubes wide": "4",
+      "Tube diameter": "18 mm",
+      "Width": "90 mm",
+      "Depth, front to back": "66.7 mm",
+      "Height": "62.8 mm"
+     },
+     "size": "4",
+     "angle": "45"
+    },
+    {
+     "id": "4-75",
+     "label": "4 wide, 75\u00b0 (top shelves)",
+     "img": "preroll-4-75",
+     "dim": "preroll-4-75-dim",
+     "specs": {
+      "Face angle": "75\u00b0 to the table",
+      "Best shelf": "Top shelves",
+      "Tubes wide": "4",
+      "Tube diameter": "18 mm",
+      "Width": "90 mm",
+      "Depth, front to back": "33.1 mm",
+      "Height": "81 mm"
+     },
+     "size": "4",
+     "angle": "75"
+    },
+    {
+     "id": "5-30",
+     "label": "5 wide, 30\u00b0 (lower shelves)",
+     "img": "preroll-5-30",
+     "dim": "preroll-5-30-dim",
+     "specs": {
+      "Face angle": "30\u00b0 to the table",
+      "Best shelf": "Lower shelves",
+      "Tubes wide": "5",
+      "Tube diameter": "18 mm",
+      "Width": "112 mm",
+      "Depth, front to back": "77.2 mm",
+      "Height": "46.9 mm"
+     },
+     "size": "5",
+     "angle": "30"
+    },
+    {
+     "id": "5-45",
+     "label": "5 wide, 45\u00b0 (mid shelves)",
+     "img": "preroll-5-45",
+     "dim": "preroll-5-45-dim",
+     "specs": {
+      "Face angle": "45\u00b0 to the table",
+      "Best shelf": "Mid shelves",
+      "Tubes wide": "5",
+      "Tube diameter": "18 mm",
+      "Width": "112 mm",
+      "Depth, front to back": "66.7 mm",
+      "Height": "62.8 mm"
+     },
+     "size": "5",
+     "angle": "45"
+    },
+    {
+     "id": "5-75",
+     "label": "5 wide, 75\u00b0 (top shelves)",
+     "img": "preroll-5-75",
+     "dim": "preroll-5-75-dim",
+     "specs": {
+      "Face angle": "75\u00b0 to the table",
+      "Best shelf": "Top shelves",
+      "Tubes wide": "5",
+      "Tube diameter": "18 mm",
+      "Width": "112 mm",
+      "Depth, front to back": "33.1 mm",
+      "Height": "81 mm"
+     },
+     "size": "5",
+     "angle": "75"
+    },
+    {
+     "id": "6-30",
+     "label": "6 wide, 30\u00b0 (lower shelves)",
+     "img": "preroll-6-30",
+     "dim": "preroll-6-30-dim",
+     "specs": {
+      "Face angle": "30\u00b0 to the table",
+      "Best shelf": "Lower shelves",
+      "Tubes wide": "6",
+      "Tube diameter": "18 mm",
+      "Width": "134 mm",
+      "Depth, front to back": "77.2 mm",
+      "Height": "46.9 mm"
+     },
+     "size": "6",
+     "angle": "30"
+    },
+    {
+     "id": "6-45",
+     "label": "6 wide, 45\u00b0 (mid shelves)",
+     "img": "preroll-6-45",
+     "dim": "preroll-6-45-dim",
+     "specs": {
+      "Face angle": "45\u00b0 to the table",
+      "Best shelf": "Mid shelves",
+      "Tubes wide": "6",
+      "Tube diameter": "18 mm",
+      "Width": "134 mm",
+      "Depth, front to back": "66.7 mm",
+      "Height": "62.8 mm"
+     },
+     "size": "6",
+     "angle": "45"
+    },
+    {
+     "id": "6-75",
+     "label": "6 wide, 75\u00b0 (top shelves)",
+     "img": "preroll-6-75",
+     "dim": "preroll-6-75-dim",
+     "specs": {
+      "Face angle": "75\u00b0 to the table",
+      "Best shelf": "Top shelves",
+      "Tubes wide": "6",
+      "Tube diameter": "18 mm",
+      "Width": "134 mm",
+      "Depth, front to back": "33.1 mm",
+      "Height": "81 mm"
+     },
+     "size": "6",
+     "angle": "75"
+    },
+    {
+     "id": "7-30",
+     "label": "7 wide, 30\u00b0 (lower shelves)",
+     "img": "preroll-7-30",
+     "dim": "preroll-7-30-dim",
+     "specs": {
+      "Face angle": "30\u00b0 to the table",
+      "Best shelf": "Lower shelves",
+      "Tubes wide": "7",
+      "Tube diameter": "18 mm",
+      "Width": "156 mm",
+      "Depth, front to back": "77.2 mm",
+      "Height": "46.9 mm"
+     },
+     "size": "7",
+     "angle": "30"
+    },
+    {
+     "id": "7-45",
+     "label": "7 wide, 45\u00b0 (mid shelves)",
+     "img": "preroll-7-45",
+     "dim": "preroll-7-45-dim",
+     "specs": {
+      "Face angle": "45\u00b0 to the table",
+      "Best shelf": "Mid shelves",
+      "Tubes wide": "7",
+      "Tube diameter": "18 mm",
+      "Width": "156 mm",
+      "Depth, front to back": "66.7 mm",
+      "Height": "62.8 mm"
+     },
+     "size": "7",
+     "angle": "45"
+    },
+    {
+     "id": "7-75",
+     "label": "7 wide, 75\u00b0 (top shelves)",
+     "img": "preroll-7-75",
+     "dim": "preroll-7-75-dim",
+     "specs": {
+      "Face angle": "75\u00b0 to the table",
+      "Best shelf": "Top shelves",
+      "Tubes wide": "7",
+      "Tube diameter": "18 mm",
+      "Width": "156 mm",
+      "Depth, front to back": "33.1 mm",
+      "Height": "81 mm"
+     },
+     "size": "7",
+     "angle": "75"
+    },
+    {
+     "id": "8-30",
+     "label": "8 wide, 30\u00b0 (lower shelves)",
+     "img": "preroll-8-30",
+     "dim": "preroll-8-30-dim",
+     "specs": {
+      "Face angle": "30\u00b0 to the table",
+      "Best shelf": "Lower shelves",
+      "Tubes wide": "8",
+      "Tube diameter": "18 mm",
+      "Width": "178 mm",
+      "Depth, front to back": "77.2 mm",
+      "Height": "46.9 mm"
+     },
+     "size": "8",
+     "angle": "30"
+    },
+    {
+     "id": "8-45",
+     "label": "8 wide, 45\u00b0 (mid shelves)",
+     "img": "preroll-8-45",
+     "dim": "preroll-8-45-dim",
+     "specs": {
+      "Face angle": "45\u00b0 to the table",
+      "Best shelf": "Mid shelves",
+      "Tubes wide": "8",
+      "Tube diameter": "18 mm",
+      "Width": "178 mm",
+      "Depth, front to back": "66.7 mm",
+      "Height": "62.8 mm"
+     },
+     "size": "8",
+     "angle": "45"
+    },
+    {
+     "id": "8-75",
+     "label": "8 wide, 75\u00b0 (top shelves)",
+     "img": "preroll-8-75",
+     "dim": "preroll-8-75-dim",
+     "specs": {
+      "Face angle": "75\u00b0 to the table",
+      "Best shelf": "Top shelves",
+      "Tubes wide": "8",
+      "Tube diameter": "18 mm",
+      "Width": "178 mm",
+      "Depth, front to back": "33.1 mm",
+      "Height": "81 mm"
+     },
+     "size": "8",
+     "angle": "75"
+    },
+    {
+     "id": "9-30",
+     "label": "9 wide, 30\u00b0 (lower shelves)",
+     "img": "preroll-9-30",
+     "dim": "preroll-9-30-dim",
+     "specs": {
+      "Face angle": "30\u00b0 to the table",
+      "Best shelf": "Lower shelves",
+      "Tubes wide": "9",
+      "Tube diameter": "18 mm",
+      "Width": "200 mm",
+      "Depth, front to back": "77.2 mm",
+      "Height": "46.9 mm"
+     },
+     "size": "9",
+     "angle": "30"
+    },
+    {
+     "id": "9-45",
+     "label": "9 wide, 45\u00b0 (mid shelves)",
+     "img": "preroll-9-45",
+     "dim": "preroll-9-45-dim",
+     "specs": {
+      "Face angle": "45\u00b0 to the table",
+      "Best shelf": "Mid shelves",
+      "Tubes wide": "9",
+      "Tube diameter": "18 mm",
+      "Width": "200 mm",
+      "Depth, front to back": "66.7 mm",
+      "Height": "62.8 mm"
+     },
+     "size": "9",
+     "angle": "45"
+    },
+    {
+     "id": "9-75",
+     "label": "9 wide, 75\u00b0 (top shelves)",
+     "img": "preroll-9-75",
+     "dim": "preroll-9-75-dim",
+     "specs": {
+      "Face angle": "75\u00b0 to the table",
+      "Best shelf": "Top shelves",
+      "Tubes wide": "9",
+      "Tube diameter": "18 mm",
+      "Width": "200 mm",
+      "Depth, front to back": "33.1 mm",
+      "Height": "81 mm"
+     },
+     "size": "9",
+     "angle": "75"
+    },
+    {
+     "id": "10-30",
+     "label": "10 wide, 30\u00b0 (lower shelves)",
+     "img": "preroll-10-30",
+     "dim": "preroll-10-30-dim",
+     "specs": {
+      "Face angle": "30\u00b0 to the table",
+      "Best shelf": "Lower shelves",
+      "Tubes wide": "10",
+      "Tube diameter": "18 mm",
+      "Width": "222 mm",
+      "Depth, front to back": "77.2 mm",
+      "Height": "46.9 mm"
+     },
+     "size": "10",
+     "angle": "30"
+    },
+    {
+     "id": "10-45",
+     "label": "10 wide, 45\u00b0 (mid shelves)",
+     "img": "preroll-10-45",
+     "dim": "preroll-10-45-dim",
+     "specs": {
+      "Face angle": "45\u00b0 to the table",
+      "Best shelf": "Mid shelves",
+      "Tubes wide": "10",
+      "Tube diameter": "18 mm",
+      "Width": "222 mm",
+      "Depth, front to back": "66.7 mm",
+      "Height": "62.8 mm"
+     },
+     "size": "10",
+     "angle": "45"
+    },
+    {
+     "id": "10-75",
+     "label": "10 wide, 75\u00b0 (top shelves)",
+     "img": "preroll-10-75",
+     "dim": "preroll-10-75-dim",
+     "specs": {
+      "Face angle": "75\u00b0 to the table",
+      "Best shelf": "Top shelves",
+      "Tubes wide": "10",
+      "Tube diameter": "18 mm",
+      "Width": "222 mm",
+      "Depth, front to back": "33.1 mm",
+      "Height": "81 mm"
+     },
+     "size": "10",
+     "angle": "75"
+    }
+   ],
+   "notes": [
+    "30\u00b0 is for lower shelves, 45\u00b0 for mid shelves, 75\u00b0 for top shelves.",
+    "Built from your GCPreRollHolder Fusion design (18 mm tube, 93 mm long). Test print one before ordering for all stores."
+   ]
+  },
+  {
+   "id": "BOTTLE",
+   "cat": "bottles",
+   "name": "Bottle Stand",
+   "tag": "Round bottles, 1 oz to 8 oz",
+   "blurb": "A stand with a curved cradle that holds a round bottle upright against the angled face. Pick the bottle size and the shelf angle.",
+   "axes": {
+    "sizes": [
+     {
+      "id": "1oz",
+      "label": "1 oz (1.18 in (30 mm) bottle)"
+     },
+     {
+      "id": "4oz",
+      "label": "4 oz (2.00 in (50.8 mm) bottle)"
+     },
+     {
+      "id": "8oz",
+      "label": "8 oz (2.50 in (63.5 mm) bottle)"
+     }
+    ],
+    "angles": [
+     {
+      "id": "30",
+      "label": "30\u00b0",
+      "note": "Lower shelves"
+     },
+     {
+      "id": "45",
+      "label": "45\u00b0",
+      "note": "Mid shelves"
+     },
+     {
+      "id": "75",
+      "label": "75\u00b0",
+      "note": "Top shelves"
+     }
+    ]
+   },
+   "fitnote": "Cradle is sized to the bottle diameter plus 2 mm.",
+   "variants": [
+    {
+     "id": "1oz-30",
+     "label": "1 oz bottle, 30\u00b0 (lower shelves)",
+     "img": "bottle-1oz-30",
+     "dim": "bottle-1oz-30-dim",
+     "specs": {
+      "Face angle": "30\u00b0 to the table",
+      "Best shelf": "Lower shelves",
+      "Bottle diameter": "30 mm",
+      "Cradle width": "19.5 mm",
+      "Width": "19.5 mm",
+      "Depth, front to back": "64.8 mm",
+      "Height": "36 mm"
+     },
+     "size": "1oz",
+     "angle": "30",
+     "fits": [
+      "1 oz tincture bottles"
+     ]
+    },
+    {
+     "id": "1oz-45",
+     "label": "1 oz bottle, 45\u00b0 (mid shelves)",
+     "img": "bottle-1oz-45",
+     "dim": "bottle-1oz-45-dim",
+     "specs": {
+      "Face angle": "45\u00b0 to the table",
+      "Best shelf": "Mid shelves",
+      "Bottle diameter": "30 mm",
+      "Cradle width": "19.5 mm",
+      "Width": "19.5 mm",
+      "Depth, front to back": "59.6 mm",
+      "Height": "48 mm"
+     },
+     "size": "1oz",
+     "angle": "45",
+     "fits": [
+      "1 oz tincture bottles"
+     ]
+    },
+    {
+     "id": "1oz-75",
+     "label": "1 oz bottle, 75\u00b0 (top shelves)",
+     "img": "bottle-1oz-75",
+     "dim": "bottle-1oz-75-dim",
+     "specs": {
+      "Face angle": "75\u00b0 to the table",
+      "Best shelf": "Top shelves",
+      "Bottle diameter": "30 mm",
+      "Cradle width": "19.5 mm",
+      "Width": "19.5 mm",
+      "Depth, front to back": "46.6 mm",
+      "Height": "61.4 mm"
+     },
+     "size": "1oz",
+     "angle": "75",
+     "fits": [
+      "1 oz tincture bottles"
+     ]
+    },
+    {
+     "id": "4oz-30",
+     "label": "4 oz bottle, 30\u00b0 (lower shelves)",
+     "img": "bottle-4oz-30",
+     "dim": "bottle-4oz-30-dim",
+     "specs": {
+      "Face angle": "30\u00b0 to the table",
+      "Best shelf": "Lower shelves",
+      "Bottle diameter": "50.8 mm",
+      "Cradle width": "33 mm",
+      "Width": "33 mm",
+      "Depth, front to back": "108.1 mm",
+      "Height": "59.1 mm"
+     },
+     "size": "4oz",
+     "angle": "30",
+     "fits": [
+      "Magic 4 oz bottle, 2 in",
+      "Mule 4 oz bottle, 2 in"
+     ]
+    },
+    {
+     "id": "4oz-45",
+     "label": "4 oz bottle, 45\u00b0 (mid shelves)",
+     "img": "bottle-4oz-45",
+     "dim": "bottle-4oz-45-dim",
+     "specs": {
+      "Face angle": "45\u00b0 to the table",
+      "Best shelf": "Mid shelves",
+      "Bottle diameter": "50.8 mm",
+      "Cradle width": "33 mm",
+      "Width": "33 mm",
+      "Depth, front to back": "99.1 mm",
+      "Height": "79.4 mm"
+     },
+     "size": "4oz",
+     "angle": "45",
+     "fits": [
+      "Magic 4 oz bottle, 2 in",
+      "Mule 4 oz bottle, 2 in"
+     ]
+    },
+    {
+     "id": "4oz-75",
+     "label": "4 oz bottle, 75\u00b0 (top shelves)",
+     "img": "bottle-4oz-75",
+     "dim": "bottle-4oz-75-dim",
+     "specs": {
+      "Face angle": "75\u00b0 to the table",
+      "Best shelf": "Top shelves",
+      "Bottle diameter": "50.8 mm",
+      "Cradle width": "33 mm",
+      "Width": "33 mm",
+      "Depth, front to back": "89.9 mm",
+      "Height": "102.6 mm"
+     },
+     "size": "4oz",
+     "angle": "75",
+     "fits": [
+      "Magic 4 oz bottle, 2 in",
+      "Mule 4 oz bottle, 2 in"
+     ]
+    },
+    {
+     "id": "8oz-30",
+     "label": "8 oz bottle, 30\u00b0 (lower shelves)",
+     "img": "bottle-8oz-30",
+     "dim": "bottle-8oz-30-dim",
+     "specs": {
+      "Face angle": "30\u00b0 to the table",
+      "Best shelf": "Lower shelves",
+      "Bottle diameter": "63.5 mm",
+      "Cradle width": "41.3 mm",
+      "Width": "41.3 mm",
+      "Depth, front to back": "134 mm",
+      "Height": "72.9 mm"
+     },
+     "size": "8oz",
+     "angle": "30",
+     "fits": [
+      "Magic 8 oz bottle, 2.5 in"
+     ]
+    },
+    {
+     "id": "8oz-45",
+     "label": "8 oz bottle, 45\u00b0 (mid shelves)",
+     "img": "bottle-8oz-45",
+     "dim": "bottle-8oz-45-dim",
+     "specs": {
+      "Face angle": "45\u00b0 to the table",
+      "Best shelf": "Mid shelves",
+      "Bottle diameter": "63.5 mm",
+      "Cradle width": "41.3 mm",
+      "Width": "41.3 mm",
+      "Depth, front to back": "122.8 mm",
+      "Height": "98.1 mm"
+     },
+     "size": "8oz",
+     "angle": "45",
+     "fits": [
+      "Magic 8 oz bottle, 2.5 in"
+     ]
+    },
+    {
+     "id": "8oz-75",
+     "label": "8 oz bottle, 75\u00b0 (top shelves)",
+     "img": "bottle-8oz-75",
+     "dim": "bottle-8oz-75-dim",
+     "specs": {
+      "Face angle": "75\u00b0 to the table",
+      "Best shelf": "Top shelves",
+      "Bottle diameter": "63.5 mm",
+      "Cradle width": "41.3 mm",
+      "Width": "41.3 mm",
+      "Depth, front to back": "133.1 mm",
+      "Height": "127.1 mm"
+     },
+     "size": "8oz",
+     "angle": "75",
+     "fits": [
+      "Magic 8 oz bottle, 2.5 in"
+     ]
+    }
+   ],
+   "notes": [
+    "15\u00b0 is for the lowest shelves, 30\u00b0 for lower shelves.",
+    "Based on the Jar Holder 3 design (40.25 mm jar). The larger sizes come from changing its jar diameter parameter; test print one before ordering for all stores."
+   ]
+  },
+  {
+   "id": "JAR",
+   "cat": "bottles",
+   "name": "Jar Stand",
+   "tag": "Jars, tins and cans",
+   "blurb": "A solid block with a round pocket that holds a jar, tin or can on its side at an angle, label facing out. Pick the jar diameter and the shelf angle.",
+   "axes": {
+    "sizes": [
+     {
+      "id": "XS",
+      "label": "Extra small (1.58 in (40.2 mm))"
+     },
+     {
+      "id": "S",
+      "label": "Small (1.97 in (50 mm))"
+     },
+     {
+      "id": "M",
+      "label": "Medium (2.36 in (60 mm))"
+     },
+     {
+      "id": "L",
+      "label": "Large (2.76 in (70 mm))"
+     }
+    ],
+    "angles": [
+     {
+      "id": "15",
+      "label": "15\u00b0",
+      "note": "Lowest shelves"
+     },
+     {
+      "id": "30",
+      "label": "30\u00b0",
+      "note": "Lower shelves"
+     }
+    ]
+   },
+   "fitnote": "Built from your Jar Holder 3 design: the scoop matches the jar diameter, and the stand is the jar diameter plus 3.5 mm wide.",
+   "variants": [
+    {
+     "id": "XS-15",
+     "label": "Extra small, 1.58 in (40.2 mm) jar, 15\u00b0 (lowest shelves)",
+     "img": "jar-XS-15",
+     "dim": "jar-XS-15-dim",
+     "specs": {
+      "Face angle": "15\u00b0 to the table",
+      "Best shelf": "Lowest shelves",
+      "Jar diameter": "40.2 mm",
+      "Width": "43.8 mm",
+      "Depth, front to back": "48.5 mm",
+      "Height": "17 mm"
+     },
+     "size": "XS",
+     "angle": "15",
+     "fits": [
+      "Round jars and tins up to 40 mm"
+     ]
+    },
+    {
+     "id": "XS-30",
+     "label": "Extra small, 1.58 in (40.2 mm) jar, 30\u00b0 (lower shelves)",
+     "img": "jar-XS-30",
+     "dim": "jar-XS-30-dim",
+     "specs": {
+      "Face angle": "30\u00b0 to the table",
+      "Best shelf": "Lower shelves",
+      "Jar diameter": "40.2 mm",
+      "Width": "43.8 mm",
+      "Depth, front to back": "46.1 mm",
+      "Height": "28 mm"
+     },
+     "size": "XS",
+     "angle": "30",
+     "fits": [
+      "Round jars and tins up to 40 mm"
+     ]
+    },
+    {
+     "id": "S-15",
+     "label": "Small, 1.97 in (50 mm) jar, 15\u00b0 (lowest shelves)",
+     "img": "jar-S-15",
+     "dim": "jar-S-15-dim",
+     "specs": {
+      "Face angle": "15\u00b0 to the table",
+      "Best shelf": "Lowest shelves",
+      "Jar diameter": "50 mm",
+      "Width": "53.5 mm",
+      "Depth, front to back": "57.9 mm",
+      "Height": "19.6 mm"
+     },
+     "size": "S",
+     "angle": "15",
+     "fits": [
+      "Round jars and tins up to 50 mm"
+     ]
+    },
+    {
+     "id": "S-30",
+     "label": "Small, 1.97 in (50 mm) jar, 30\u00b0 (lower shelves)",
+     "img": "jar-S-30",
+     "dim": "jar-S-30-dim",
+     "specs": {
+      "Face angle": "30\u00b0 to the table",
+      "Best shelf": "Lower shelves",
+      "Jar diameter": "50 mm",
+      "Width": "53.5 mm",
+      "Depth, front to back": "54.5 mm",
+      "Height": "32.8 mm"
+     },
+     "size": "S",
+     "angle": "30",
+     "fits": [
+      "Round jars and tins up to 50 mm"
+     ]
+    },
+    {
+     "id": "M-15",
+     "label": "Medium, 2.36 in (60 mm) jar, 15\u00b0 (lowest shelves)",
+     "img": "jar-M-15",
+     "dim": "jar-M-15-dim",
+     "specs": {
+      "Face angle": "15\u00b0 to the table",
+      "Best shelf": "Lowest shelves",
+      "Jar diameter": "60 mm",
+      "Width": "63.5 mm",
+      "Depth, front to back": "67.6 mm",
+      "Height": "22.1 mm"
+     },
+     "size": "M",
+     "angle": "15",
+     "fits": [
+      "Magic 12 oz can, 2.25 in",
+      "Round gummy jars up to 60 mm"
+     ]
+    },
+    {
+     "id": "M-30",
+     "label": "Medium, 2.36 in (60 mm) jar, 30\u00b0 (lower shelves)",
+     "img": "jar-M-30",
+     "dim": "jar-M-30-dim",
+     "specs": {
+      "Face angle": "30\u00b0 to the table",
+      "Best shelf": "Lower shelves",
+      "Jar diameter": "60 mm",
+      "Width": "63.5 mm",
+      "Depth, front to back": "63.2 mm",
+      "Height": "37.8 mm"
+     },
+     "size": "M",
+     "angle": "30",
+     "fits": [
+      "Magic 12 oz can, 2.25 in",
+      "Round gummy jars up to 60 mm"
+     ]
+    },
+    {
+     "id": "L-15",
+     "label": "Large, 2.76 in (70 mm) jar, 15\u00b0 (lowest shelves)",
+     "img": "jar-L-15",
+     "dim": "jar-L-15-dim",
+     "specs": {
+      "Face angle": "15\u00b0 to the table",
+      "Best shelf": "Lowest shelves",
+      "Jar diameter": "70 mm",
+      "Width": "73.5 mm",
+      "Depth, front to back": "77.2 mm",
+      "Height": "24.7 mm"
+     },
+     "size": "L",
+     "angle": "15",
+     "fits": [
+      "Round tubs and cans up to 70 mm"
+     ]
+    },
+    {
+     "id": "L-30",
+     "label": "Large, 2.76 in (70 mm) jar, 30\u00b0 (lower shelves)",
+     "img": "jar-L-30",
+     "dim": "jar-L-30-dim",
+     "specs": {
+      "Face angle": "30\u00b0 to the table",
+      "Best shelf": "Lower shelves",
+      "Jar diameter": "70 mm",
+      "Width": "73.5 mm",
+      "Depth, front to back": "71.8 mm",
+      "Height": "42.8 mm"
+     },
+     "size": "L",
+     "angle": "30",
+     "fits": [
+      "Round tubs and cans up to 70 mm"
+     ]
+    }
+   ],
+   "notes": [
+    "15\u00b0 is for the lowest shelves, 30\u00b0 for lower shelves.",
+    "Based on the Jar Holder 3 design (40.25 mm jar). The larger sizes come from changing its jar diameter parameter; test print one before ordering for all stores."
+   ]
+  },
+  {
+   "id": "TACO",
+   "cat": "trays",
+   "name": "Taco Tray",
+   "tag": "Three-pocket tray",
+   "blurb": "A red three-pocket tray that holds the Don Coolio Don Taco Case. Sits flat on the shelf or counter.",
+   "fits": [
+    "Don Coolio Don Taco Case"
+   ],
+   "fitnote": "Made for the Don Coolio Don Taco Case.",
+   "variants": [
+    {
+     "id": "STD",
+     "label": "",
+     "img": "taco",
+     "dim": "taco-dim",
+     "specs": {
+      "Pockets": "3",
+      "Width": "117.8 mm",
+      "Depth, front to back": "50 mm",
+      "Height": "32.6 mm",
+      "Colors": "Red"
+     }
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "PRICECARD",
+   "cat": "trays",
+   "name": "Price Card Holder",
+   "tag": "Shelf price card holder",
+   "blurb": "A low black holder that sits flat on the shelf. A slot along the top grips a card upright, with GREENCROSS on the angled front.",
+   "variants": [
+    {
+     "id": "STD",
+     "label": "",
+     "img": "pricecard",
+     "dim": "pricecard-dim",
+     "specs": {
+      "Length": "63.5 mm",
+      "Depth, front to back": "20.3 mm",
+      "Height": "7.6 mm",
+      "Colors": "Black"
+     }
+    }
+   ],
+   "notes": [
+    "Sold singly. Order one per card position."
+   ]
+  },
+  {
+   "id": "LIGHTER",
+   "cat": "lighter",
+   "name": "Lighter Pyramid Display",
+   "tag": "Two-color, with GREENCROSS logo",
+   "blurb": "Stepped pyramid that holds a full lighter assortment in slots. Black with a white GREENCROSS logo on the sides.",
+   "variants": [
+    {
+     "id": "25",
+     "label": "25 slots (standard)",
+     "img": "lighter-25",
+     "dim": "lighter-25-dim",
+     "specs": {
+      "Footprint": "158 mm square",
+      "Height": "50 mm",
+      "Slots": "25",
+      "Colors": "Black and white"
+     }
+    },
+    {
+     "id": "29",
+     "label": "29 slots (alternate)",
+     "img": "lighter-29",
+     "dim": "lighter-29-dim",
+     "specs": {
+      "Footprint": "141 mm square",
+      "Height": "40 mm",
+      "Slots": "29",
+      "Colors": "Black and white"
+     }
+    }
+   ],
+   "notes": [
+    "The 25-slot is the standard stand, already in use at every store. The 29-slot is the alternate layout."
+   ]
+  },
+  {
+   "id": "BATT",
+   "cat": "battery",
+   "name": "Battery Holder",
+   "tag": "Boxed battery display",
+   "blurb": "Tiered tray that stands boxed batteries for display, with the GREENCROSS name on the front. Pick the battery type.",
+   "variants": [
+    {
+     "id": "BAR",
+     "label": "Bar (Conceal)",
+     "img": "batt-bar",
+     "dim": "batt-bar-dim",
+     "specs": {
+      "Footprint": "114 \u00d7 100 mm",
+      "Height": "37 mm"
+     }
+    },
+    {
+     "id": "DIG",
+     "label": "Digital",
+     "img": "batt-digital",
+     "dim": "batt-digital-dim",
+     "specs": {
+      "Footprint": "150 \u00d7 146 mm",
+      "Height": "57 mm"
+     }
+    },
+    {
+     "id": "VV",
+     "label": "Variable voltage",
+     "img": "batt-vv",
+     "dim": "batt-vv-dim",
+     "specs": {
+      "Footprint": "132 \u00d7 112 mm",
+      "Height": "57 mm"
+     },
+     "extra": [
+      "photo-bat_vv1"
+     ]
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "SOON-GIFT",
+   "cat": "soon",
+   "name": "Gift Card Stand",
+   "tag": "Paused",
+   "soon": "Paused with the gift card program.",
+   "blurb": "Counter stand for sleeved gift cards.",
+   "variants": [
+    {
+     "id": "x",
+     "label": "",
+     "img": "giftcard",
+     "dim": "giftcard-dim",
+     "specs": {}
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "SOON-DAB",
+   "cat": "soon",
+   "name": "3-tier Dab Case Riser",
+   "tag": "Portland Rd cases only",
+   "soon": "Built for the Portland Rd cases. Ask Sky if another store needs one.",
+   "blurb": "Three-tier stepped riser for display cases.",
+   "variants": [
+    {
+     "id": "x",
+     "label": "",
+     "img": "photo-dab",
+     "specs": {}
+    }
+   ],
+   "notes": []
+  }
+ ]
+}

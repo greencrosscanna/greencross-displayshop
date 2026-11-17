@@ -1,0 +1,4 @@
+.gx_deploy_secret
+__pycache__/
+.DS_Store
+.gx_claim*
