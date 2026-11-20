@@ -15,6 +15,7 @@
 <!-- gx-handoff.js FIRST: it takes a portal sign-in code (#gxcode=) out of the address bar before anything reads it. -->
 <script src="https://greencrosscanna.github.io/greencross-gx-theme/gx-handoff.js"></script>
 <script src="https://greencrosscanna.github.io/greencross-gx-theme/gx-client.js"></script>
+<script src="https://greencrosscanna.github.io/greencross-gx-theme/gx-jointloader.js?v=1"></script>
 <script>
   // Dev guard reads. The only write is submit_display_order (an email to Sky): blocked locally until armed.
   window.GX_DEV_READS=['login','stores'];
@@ -94,7 +95,7 @@ body.gated .top,body.gated main{display:none}
 <script>
 const DATA=__DATA__;
 const IMG=__IMG__;
-const APP_VERSION='v1.002'; /* deploy.sh reads this; bump on each ship (vMAJOR.BBB) */
+const APP_VERSION='v1.003'; /* deploy.sh reads this; bump on each ship (vMAJOR.BBB) */
 /* GX Core: sign-in, the live store list, and the one write — submit_display_order, which emails Sky.
    The server decides everything that matters: who is ordering (from the session), whether they may
    (a manager on any app), which store, which items. This page only collects and shows. */
@@ -283,7 +284,12 @@ function done(pl,sent,r){if(sent){cart=[];save();count()}
  const cp=$('#cp');if(cp)cp.onclick=()=>{try{navigator.clipboard.writeText(pl.text).then(()=>toast('Copied'),()=>toast('Select the text and copy'))}catch(e){toast('Select the text and copy')}}}
 /* ── sign-in (suite gx-login look; password only — Google sign-in is the portal's, for admins) ── */
 function sessionFromLogin(r){return{user:r.user,name:r.displayName||r.user,role:r.role,token:r.token,expiresAt:r.expiresAt}}
-function signOut(msg){clearSession();renderGate(msg||'')}
+/* Burning-joint cover (shared gx-jointloader.js): up from sign-in / page open until the store list has
+   answered and the catalog is drawn. done() finishes the burn; cancel() drops it for a failure. */
+let loader=null;
+function showLoader(){if(!loader&&window.GXJointLoader)loader=GXJointLoader.screen({appName:'Display Shop'});return loader}
+function hideLoader(finish){const l=loader;loader=null;if(l){if(finish)l.done();else l.cancel()}}
+function signOut(msg){hideLoader(false);clearSession();renderGate(msg||'')}
 function renderGate(errMsg){document.body.classList.add('gated');$('#cov').classList.remove('on');$('#drawer').classList.remove('on');
  $('#gate').innerHTML='<div class="gx-login"><div class="gx-login-card"><div class="gx-login-head"><img class="gx-login-mark" src="https://greencrosscanna.github.io/greencross-gx-theme/gx-logo.png" alt="Green Cross"><div class="gx-login-sub">Display Shop</div></div>'+
   '<form class="gx-login-form" id="gateForm"><label class="gx-login-field"><span>Username</span><input class="gx-input" id="gateUser" autocomplete="username" autocapitalize="none" required></label>'+
@@ -291,24 +297,28 @@ function renderGate(errMsg){document.body.classList.add('gated');$('#cov').class
   '<button type="submit" class="gx-btn gx-btn-green gx-login-submit">Sign in</button><div class="gx-login-err">'+esc(errMsg)+'</div></form></div></div>';
  const form=$('#gateForm');
  form.addEventListener('submit',ev=>{ev.preventDefault();const btn=form.querySelector('button'),err=form.querySelector('.gx-login-err');
-  btn.disabled=true;btn.textContent='Signing in…';err.textContent='';
+  btn.disabled=true;btn.textContent='Signing in…';err.textContent='';showLoader();
   GX.getJSON('login',{user:$('#gateUser').value.trim(),pass:$('#gatePass').value,app:'displayshop'},{retries:2,timeoutMs:20000}).then(r=>{
    if(r&&r.code==='no_access')throw new Error('Your account is not set up for Green Cross apps yet. Ask Sky to add you.');
    if(!r||!r.ok)throw new Error((r&&r.error)||'Sign-in failed');
    setSession(sessionFromLogin(r));start()
-  }).catch(e=>{err.textContent=(e&&e.message)||'Sign-in failed';btn.disabled=false;btn.textContent='Sign in';$('#gatePass').value=''})});
+  }).catch(e=>{hideLoader(false);err.textContent=(e&&e.message)||'Sign-in failed';btn.disabled=false;btn.textContent='Sign in';$('#gatePass').value=''})});
  $('#gateUser').focus()}
-function loadStores(){GX.jsonp('stores',{}).then(r=>{const list=((r&&r.stores)||[]).filter(s=>s.store_id&&s.display_name&&!s.is_closed)
+function loadStores(){return GX.jsonp('stores',{}).then(r=>{const list=((r&&r.stores)||[]).filter(s=>s.store_id&&s.display_name&&!s.is_closed)
   .sort((a,b)=>(a.sort_order||0)-(b.sort_order||0)).map(s=>({id:s.store_id,name:s.display_name}));if(list.length)STORES=list}).catch(()=>{})}
-function start(){const s=getSession();if(!s){renderGate('');return}
+let storesP=Promise.resolve();
+function start(){const s=getSession();if(!s){hideLoader(false);renderGate('');return}
+ showLoader();
  document.body.classList.remove('gated');$('#gate').innerHTML='';
  $('#who').textContent=(s.name||s.user)+' · Sign out';$('#who').onclick=()=>signOut('');
- count();render()}
+ count();render();
+ /* ready = the live store list has answered (or failed to; the offline list then stands) */
+ storesP.then(()=>hideLoader(true),()=>hideLoader(true))}
 $('#q').oninput=e=>{query=e.target.value;render()};
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){$('#pov').classList.remove('on');$('#drawer').classList.remove('on')}});
 /* Portal tile: a one-time #gxcode= is traded for this app's normal session, then the page reloads signed in.
    No code (the usual case) does nothing; the password form stays as it is. */
 if(window.GXHandoff&&GXHandoff.code)GXHandoff.run({app:'displayshop',save:r=>setSession(sessionFromLogin(r)),current:()=>{const s=getSession();return s?s.user:null}});
-loadStores();start();
+storesP=loadStores();start();
 try{document.fonts.load('900 100px GothamBlack').then(()=>{Object.keys(plateCache).forEach(k=>delete plateCache[k]);render()}).catch(()=>{})}catch(e){}
 </script></body></html>
