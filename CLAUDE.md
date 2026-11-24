@@ -46,7 +46,7 @@ The hub's `tests/display_order_test.js` fails when the two drift.
 
 From the hub, `preview_start displayshop-preview` (port **8757**). `gx-dev.js` blocks the order write
 until armed. `sh ./gxdevlogin.sh` does not know `displayshop` yet; mint a `core-admin` dev session and put
-its token in `sessionStorage['displayshop_session']` (it is a viewer, so ordering is refused — by design).
+its token in `localStorage['displayshop_session']` (it is a viewer, so ordering is refused — by design).
 
 The shop keeps its own dark CSS for its own classes; the sign-in gate uses gx-theme's shared `gx-login`
 components. Never restyle a `gx-*` class here — send core-admin a note instead.

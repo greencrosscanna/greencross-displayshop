@@ -95,7 +95,7 @@ body.gated .top,body.gated main{display:none}
 <script>
 const DATA=__DATA__;
 const IMG=__IMG__;
-const APP_VERSION='v1.003'; /* deploy.sh reads this; bump on each ship (vMAJOR.BBB) */
+const APP_VERSION='v1.004'; /* deploy.sh reads this; bump on each ship (vMAJOR.BBB) */
 /* GX Core: sign-in, the live store list, and the one write — submit_display_order, which emails Sky.
    The server decides everything that matters: who is ordering (from the session), whether they may
    (a manager on any app), which store, which items. This page only collects and shows. */
@@ -107,9 +107,16 @@ const EDIT_ROLES=['manager','director','editor','admin'];
    registry's (Century = Bend, Baseline = Hillsboro), and the store_id is what is sent. */
 let STORES=[{id:'bend',name:'Century'},{id:'center',name:'Center'},{id:'commercial',name:'Commercial'},{id:'hillsboro',name:'Baseline'},{id:'portland-rd',name:'Portland'},{id:'river-rd',name:'River'}];
 function expiryMs(v){const n=Number(v);if(isFinite(n)&&n>0)return n;const t=Date.parse(v);return isNaN(t)?0:t}
-function getSession(){try{const s=JSON.parse(sessionStorage.getItem(SESSION_KEY)||'null');if(s&&s.token&&(!s.expiresAt||expiryMs(s.expiresAt)>Date.now()))return s}catch(e){}return null}
-function setSession(s){try{sessionStorage.setItem(SESSION_KEY,JSON.stringify(s))}catch(e){}}
-function clearSession(){try{sessionStorage.removeItem(SESSION_KEY)}catch(e){}}
+/* The sign-in lives in localStorage so it survives closing the tab (Sky, 2026-11-23: store computers are
+   private, and the token's own expiresAt still ends it). Up to v1.003 it lived in sessionStorage, so a
+   session found only there is moved over once and the old copy removed. Sign-out clears both. */
+function readSessionRaw(){let raw=null;try{raw=localStorage.getItem(SESSION_KEY)}catch(e){}
+ if(raw)return raw;
+ try{const old=sessionStorage.getItem(SESSION_KEY);if(old){try{localStorage.setItem(SESSION_KEY,old)}catch(e){}sessionStorage.removeItem(SESSION_KEY);return old}}catch(e){}
+ return null}
+function getSession(){try{const s=JSON.parse(readSessionRaw()||'null');if(s&&s.token&&(!s.expiresAt||expiryMs(s.expiresAt)>Date.now()))return s}catch(e){}return null}
+function setSession(s){try{localStorage.setItem(SESSION_KEY,JSON.stringify(s))}catch(e){}}
+function clearSession(){try{localStorage.removeItem(SESSION_KEY)}catch(e){}try{sessionStorage.removeItem(SESSION_KEY)}catch(e){}}
 const $=s=>document.querySelector(s);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const src=k=>IMG[k]||'';
